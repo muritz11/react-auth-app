@@ -13,8 +13,8 @@ export default function Form(props) {
                             {props.children}
                         </form>
                     </div>
-                    <div className="float-right col-md-6">
-                        <figure><img src="../images/signup-image.jpg" alt="" /></figure>
+                    <div className="col-md-6 fig">
+                        <figure><img src={props.imgSrc} alt="" /></figure>
                         {props.link}
                     </div>
                 </div>

@@ -46,3 +46,20 @@
 .my-nav{
   margin-right: 0 !important;
 }
+
+.fig{
+  width: 50%;
+}
+
+.fig img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .my-card{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}

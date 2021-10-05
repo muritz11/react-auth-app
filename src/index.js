@@ -11,27 +11,12 @@ const initialState = {
   redirect: null,
   auth: [],
   users: [{
-    email: 'bradley@gmail.com',
-    name: 'maurice abuguja',
+    email: 'example@gmail.com',
+    name: 'Maurice Abuguja',
     occupation: 'web dev',
-    phone: '0812983829',
-    username: 'dondaddy',
+    phone: '081298382899',
+    username: 'muritz',
     password: 'dondaddy',
-    auth: true
-  },{
-    email: 'bradley@gmail.com',
-    name: 'maurice abuguja',
-    occupation: 'web dev',
-    phone: '0812983829',
-    username: 'dondaddy',
-    auth: true
-  },{
-    email: 'bradley@gmail.com',
-    name: 'maurice abuguja',
-    occupation: 'web dev',
-    phone: '0812983829',
-    username: 'dondaddy',
-    auth: false
   }]
 }
 

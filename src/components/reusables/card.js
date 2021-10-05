@@ -1,10 +1,10 @@
-import avatar from "../../images/avatar-icon.svg";
+import avatar from "../../vendor/images/avatar-icon.svg";
 
 
 function card(props) {
     
     return (
-        <div className="my-card bg-white cont border-0 p-4 m-5 d-sm-inline-block">
+        <div className="my-card bg-white cont border-0 p-4 m-md-5 d-sm-inline-block">
                 
             <div className="card-content row">
                 <div className='col-md-5 img text-center'>

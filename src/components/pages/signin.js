@@ -4,6 +4,7 @@ import Form from "../reusables/form";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { log, errMsg, succMsg, authUser, redir } from "../../actions/action";
+import loginImg from "../../vendor/images/authentication_fsn5.svg";
 
 function Signin(props) {
 
@@ -46,8 +47,8 @@ function Signin(props) {
 
                 //check password, add user to authenticated users and redirect user to homepage
                 if (checkUser.password === password) {
-                    console.log('good to go');
                     props.authUser(checkUser);
+                    props.log(true);
                     props.succMsg('Login successful');
 
                     setTimeout(() => {
@@ -75,7 +76,7 @@ function Signin(props) {
         return <Redirect to={ props.redirect } />
     } else {
         return (
-            <Form title="Sign in" link={link} submit={handleSubmit}>
+            <Form title="Sign in" link={link} submit={handleSubmit} imgSrc={loginImg}>
                 <Inputs name="username" type="text" placeholder="Enter your username" iconName="user-o" change={handleInput} val={username} />
                 <Inputs name="password" type="password" placeholder="Password" change={handleInput} val={password} iconName="lock" />
 

@@ -3,7 +3,8 @@ import Inputs from "../reusables/input";
 import Form from "../reusables/form";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-import { addUser, errMsg, succMsg, redir } from "../../actions/action";;
+import { addUser, errMsg, succMsg, redir } from "../../actions/action";
+import loginImg from "../../vendor/images/Freelancer_re_irh4.svg";
 
 class Signup extends React.Component {
 
@@ -108,7 +109,7 @@ class Signup extends React.Component {
             return <Redirect to={ this.props.redirect } />
         } else {
             return (
-                <Form title="Sign up" link={this.link} submit={this.handleSubmit}>
+                <Form title="Sign up" link={this.link} submit={this.handleSubmit} imgSrc={loginImg}>
                     <Inputs name="name" type="text" placeholder="Your Name" change={this.handleInput} val={this.state.name} iconName="user-o" />
 
                     <Inputs name="username" type="text" placeholder="Your Username" change={this.handleInput} val={this.state.username} iconName="user" />
