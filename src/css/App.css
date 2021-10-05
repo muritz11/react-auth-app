@@ -1,0 +1,48 @@
+
+.app{
+  background: #f8f8f8;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.signup{
+  width: 90%;
+}
+
+.form-title{
+  font-size: 2.8em;
+}
+
+.container, .cont{
+  border-radius: 20px;
+}
+
+.form-control input:focus{
+  outline: none;
+}
+
+.my-card{
+  max-width: 520px !important;
+}
+
+.card-content{
+  z-index: 1;
+}
+
+.img img{
+  border-radius: 50%;
+  max-height: 250px;
+  width: 100%;
+}
+
+.font-weight{
+  font-weight: bolder;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.my-nav{
+  margin-right: 0 !important;
+}

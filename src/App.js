@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './css/App.css';
+// import './css/style.css';
+import './vendor/bootstrap-main/dist/css/bootstrap.css';
+import './fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css';
+import Signin from './components/pages/signin';
+import Signup from './components/pages/signup';
+import Home from './components/pages/home';
+import Nav from './components/reusables/nav';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    return(
+
+      <Router>
+          <Nav />
+        <div className='app d-flex pt-5'>
+          <Switch>
+            <Route exact path="/">
+              <Signin />
+            </Route>
+            <Route path="/login">
+              <Signin />
+            </Route>
+            <Route path="/register">
+              <Signup />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+
+    )
+
 }
 
 export default App;
