@@ -49,7 +49,7 @@ function Signin(props) {
                 if (checkUser.password === password) {
                     props.authUser(checkUser);
                     props.log(true);
-                    props.succMsg('Login successful');
+                    props.succMsg('Login successful!');
 
                     setTimeout(() => {
                         props.succMsg(null);

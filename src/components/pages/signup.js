@@ -80,7 +80,7 @@ class Signup extends React.Component {
 
                     this.props.addUser(this.state);
 
-                    this.props.succMsg('Registration successful');
+                    this.props.succMsg('Registration successful!');
                     setTimeout(() => {
                         this.props.succMsg(null);
                         this.setState({ name: '', phone: '', username: '',email: '', password: '', occupation: '' }); 

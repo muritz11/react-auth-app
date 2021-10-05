@@ -13,7 +13,7 @@ const initialState = {
   users: [{
     email: 'example@gmail.com',
     name: 'Maurice Abuguja',
-    occupation: 'web dev',
+    occupation: 'frontend dev',
     phone: '081298382899',
     username: 'muritz',
     password: 'dondaddy',
